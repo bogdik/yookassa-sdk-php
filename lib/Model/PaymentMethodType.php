@@ -77,6 +77,8 @@ class PaymentMethodType extends AbstractEnum
     const TINKOFF_BANK   = 'tinkoff_bank';
     /** ПромсвязьБанк */
     const PSB            = 'psb';
+    /** MirPAY */
+    const MIR_PAY      = 'mir_pay';
     /** Заплатить по частям */
     const INSTALLMENTS   = 'installments';
     /**
@@ -102,6 +104,7 @@ class PaymentMethodType extends AbstractEnum
         self::INSTALLMENTS   => true,
         self::B2B_SBERBANK   => true,
         self::PSB            => false,
+        self::MIR_PAY        => true,
         self::WECHAT         => false,
         self::SBP            => true,
     );
